@@ -7,6 +7,8 @@ from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder, HumanMess
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import LLMChain
 from get_prompt import load_prompt, load_prompt_with_questions
+from dotenv import load_dotenv
+load_dotenv()
 
 st.set_page_config(page_title="LangChain: Getting Started Class", page_icon="🦜")
 st.title("🦜 LangChain: Getting Started Class")
